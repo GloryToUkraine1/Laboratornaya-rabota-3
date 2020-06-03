@@ -11,14 +11,11 @@ public class Location
 	//@Override
     public boolean equals(Object obj) {
     if (obj instanceof Location) {
-        // Cast another object to Location type,
-        // then compare.  Return true if equal.
         Location other = (Location) obj;
         if (xCoord == other.xCoord && yCoord == other.yCoord) {
             return true;
         }
     }
-       // If we got here then they're not equal.  Return false.
        return false;
    }
 	
